@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is Indian AQI"
+                android:textDirection="rtl"
+                android:textStyle="bold"
+                android:textColor="@color/pure_black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Air Quality Index or AQl is an overall scheme that transforms values of individual pollutants such as PM2.5, PM10, SO2, CO etc. into a single number that can then be used to communicate the current levels of air quality and their corresponding health impact consistently across the entire country"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textDirection="rtl"
+                android:textColor="@color/transparent_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How is the Indian AQI number related to your health"
+                android:textSize="30sp"
+                android:textColor="@color/pure_black"
+                android:textDirection="rtl"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/health_india" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How is Indian AQI calculated from PM2.5 and PM10"
+                android:textStyle="bold"
+                android:textDirection="rtl"
+                android:textColor="@color/pure_black"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="The chart below provides a mapping from PM2.5 and PM10 to their corresponding AQls. Say currently PM2.5 is 30 ug/m3 and PM10 is 100 Hg/m3. According to the table below, PM2.5 of 30 ug/m3 maps to PM2.5 AQl of 50 and PM10 of 100 ug/m3 maps to PM10 AQl of 100 The overall AQI is the maximum of the PM2.5 AQI and PM10 AQl so in that case overall AQl max 50, 100) - 100 or Satisfactory"
+                android:textSize="20sp"
+                android:textColor="@color/transparent_black"
+                android:textDirection="rtl"
+                android:textStyle="italic"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pm_india"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+</ScrollView>

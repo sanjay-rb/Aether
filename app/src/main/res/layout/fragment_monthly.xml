@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MonthlyFragment"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <io.blackbox_vision.materialcalendarview.view.CalendarView
+        android:layout_weight="1"
+        android:id="@+id/calender_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:calendarTitleTextColor="#000000"
+        app:calendarWeekendTextColor="#000000"
+        app:calendarWeekendDays="saturday|sunday">
+
+    </io.blackbox_vision.materialcalendarview.view.CalendarView>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/date_chart"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+</LinearLayout>

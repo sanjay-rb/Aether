@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AETHER</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="water_quality">Water Quality</string>
+    <string name="_0_0">0.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_ground">back_ground</string>
+</resources>

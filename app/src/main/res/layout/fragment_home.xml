@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/air_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/air_quality_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/air_quality"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/face_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/air_quality_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_ic_face_1_green" />
+
+            <TextView
+                android:id="@+id/air_quality_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/face_image"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/_0_0"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="70sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/water_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="onWaterClick"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/water_quality"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/water_quality_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/_0_0"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

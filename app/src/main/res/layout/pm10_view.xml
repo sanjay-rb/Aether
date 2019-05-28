@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is PM10"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Particle pollution, also called particulate matter or PM consists of two major groups based on size PM2.5 and PM10 PM10 represents the coarse particles up to 10 micrometers (about 25 times thinner than a human hair) These particles cause less severe health effects mostly in the upper respiratory tract. These consist of smoke, dirt and dust from factories, farming and roads as well as mold spores and pollen. They are made from crushing and grind ng rocks and soil then blown by wind. PM10 is measured in ug/m3"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textDirection="rtl"
+            android:textColor="@color/transparent_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM10 concentration related to your health According to Indian AQI"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pm10_india" />
+
+
+    </LinearLayout>
+
+</ScrollView>

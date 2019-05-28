@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is PM2.5"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Particle pollution, also called particulate matter or PM consists of two major groups based on size PM2.5 and PM10 PM2.5 represents the very tiny particles smaller than 2.5 micrometers (more than 100 times thinner than a human hair). They are made from automobile exhaust,
+burning garbage and landfill, smelting and processing of metals These are lighter and go deeper into the lungs and blood stream and cause greater damage longer term. PM2.5 is measured in ug/m3
+"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textDirection="rtl"
+            android:textColor="@color/transparent_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PM2.5 concentration related to your health? According to Indian AQI"
+            android:textSize="30sp"
+            android:textColor="@color/pure_black"
+            android:textDirection="rtl"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pm2_5_india" />
+
+    </LinearLayout>
+
+</ScrollView>

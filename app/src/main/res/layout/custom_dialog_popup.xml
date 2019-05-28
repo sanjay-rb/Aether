@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:padding="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.github.anastr.speedviewlib.PointerSpeedometer
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/gauge_level"
+                android:layout_width="300sp"
+                android:layout_height="400sp"
+                android:layout_centerHorizontal="true"
+                app:sv_backgroundCircleColor="#00ff00"/>
+
+            <TextView
+                android:id="@+id/air_pollution_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gauge_level"
+                android:text="Air pollution banding"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/air_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/air_pollution_level"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/good_layout"
+                android:layout_below="@id/air_description"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/good_face"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_face_1_green"
+                    android:contentDescription="face_green" />
+                <ImageView
+                    android:id="@+id/good_sport"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_health_sport_green"
+                    android:contentDescription="sport_green" />
+                <ImageView
+                    android:id="@+id/good_window"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_health_window_green"
+                    android:contentDescription="window_green" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/moderate_layout"
+                android:layout_below="@id/air_description"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/mod_face"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_face_2_yellow"
+                    android:contentDescription="face_yello" />
+                <ImageView
+                    android:id="@+id/mod_sport"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_health_sport_orange"
+                    android:contentDescription="sport_yello" />
+                <ImageView
+                    android:id="@+id/mod_window"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_ic_health_window_red"
+                    android:contentDescription="window_red" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/danger_layout"
+                android:layout_below="@id/air_description"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/bad_face"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ic_face_4_red"
+                        android:contentDescription="face_green" />
+                    <ImageView
+                        android:id="@+id/bad_sport"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ic_health_sport_red"
+                        android:contentDescription="sport_green" />
+                    <ImageView
+                        android:id="@+id/bad_window"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ic_health_window_red"
+                        android:contentDescription="window_green" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bad_mask"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ic_health_mask_red"
+                        android:contentDescription="window_green" />
+
+                    <ImageView
+                        android:id="@+id/bad_air_pure"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:padding="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ic_health_airpurifier_red"
+                        android:contentDescription="window_green" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.v7.widget.CardView>

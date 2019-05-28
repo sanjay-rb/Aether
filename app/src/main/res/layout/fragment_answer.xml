@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerFragment">
+
+    <LinearLayout
+        android:id="@+id/india_aqi_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/indianaqi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pm2_5_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/pm_two_five"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pm10_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/pm10_view"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/co2_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/co2_view"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

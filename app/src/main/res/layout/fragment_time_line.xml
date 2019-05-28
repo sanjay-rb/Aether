@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeLineFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAILY"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:foregroundTintMode="add"
+            android:foregroundTint="@color/nav_item_color"
+            tools:targetApi="lollipop" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MONTHLY"
+            android:textAlignment="center"
+            android:textDirection="rtl"
+            android:foregroundTintMode="add"
+            android:foregroundTint="@color/nav_item_color"
+            tools:targetApi="lollipop" />
+
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_view"
+        android:layout_below="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

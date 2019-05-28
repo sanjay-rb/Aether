@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "478498644622",
+    "firebase_url": "https://airwater-79c5e.firebaseio.com",
+    "project_id": "airwater-79c5e",
+    "storage_bucket": "airwater-79c5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478498644622:android:c9dc356a5a7e039b",
+        "android_client_info": {
+          "package_name": "sih.project.airwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478498644622-a2spj9jh845gnn7k2j4em42c93mkufu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sih.project.airwater",
+            "certificate_hash": "1126787af74a5c7645b64791da0ac8b4494eb1a8"
+          }
+        },
+        {
+          "client_id": "478498644622-nqsaaoq3galodkvluvtj2s3v6n95sggu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDAFuu6I7FrMd09EjOkIZfBhUnPDVwbuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478498644622-nqsaaoq3galodkvluvtj2s3v6n95sggu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

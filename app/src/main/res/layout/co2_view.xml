@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is CO2"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CO2 is a natural constituent of the air we breathe; it is a colourless, odourless and non-flammable gas produced by metabolic processes (such as human breathing) and by combustion of fossil fuel:s The average outdoor air concentration of CO2 is in the order ot 400 ppm. Indoor levels are usually higher, due to the CO2 exhaled by building occupants. Human respiration, indoor combustion appliances, in particular gas stoves, can also increase CO2 levels"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textDirection="rtl"
+            android:textColor="@color/transparent_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Health Impact of Co2"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" A study from the Harvard School of Public Health fnds that carbon dioxide (CO2) has a direct and negative impact on human cognition and decision-making. They found that, on average, a typical participant's cognitive scores dropped percent with a 400 ppm increase in C02 High levels of CO2 also indicate poor ventilation which can also lead to increased humidity, as moisture produced indoors is not vented to the outside. High humidity can encourage the growth of mould and dust mites; both of which are allergens and asthma triggers"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textDirection="rtl"
+            android:textColor="@color/transparent_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CO2 concentration related to your health According to Indian AQI"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="@color/pure_black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/co2_india" />
+
+    </LinearLayout>
+
+</ScrollView>
